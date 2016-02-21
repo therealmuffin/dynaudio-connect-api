@@ -18,7 +18,7 @@ This document is mostly accurate. However, I might have mixed up states (on/off)
 
 ## 1. Overview
 
-Command and feedback messages have the following structure:
+All command and feedback messages have the following structure:
 
 <pre>
 0xFF 0x55 0x'payload size' [payload of PS bytes] 0x'checksum'
