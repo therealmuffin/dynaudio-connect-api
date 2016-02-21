@@ -7,14 +7,14 @@ This document is mostly accurate. However, I might have mixed up states (on/off)
 #### Contents
 
 - [Overview](#1-overview)
-- [Commands](#2-Control)
+- [Commands](#2-control)
   - [shortcuts](#21-shortcuts)
-- [Feedback](#3-Feedback)
+- [Feedback](#3-feedback)
   - [shortcuts](#31-shortcuts)
-- [Checksum](#4-Checksum)
-- [Connection](#5-Connection)
-- [Questions and Requests](#6-Questions)
-- [Glossary](#7-Glossary)
+- [Checksum](#4-checksum)
+- [Connection](#5-connection)
+- [Questions and Requests](#6-questions-and-requests)
+- [Glossary](#7-glossary)
 
 ## 1. Overview
 
