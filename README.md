@@ -21,13 +21,13 @@ This document is mostly accurate. However, I might have mixed up states (on/off)
 All command and feedback messages have the following structure:
 
 <pre>
-0xFF 0x55 0x'payload size' [payload of PS bytes] 0x'checksum'
+0xFF 0x55 0x'payload size (PS)' [payload of PS bytes] 0x'checksum'
 </pre>
 
 
 ## 2. Control
 
-The API allows for control of the volume level and the functions mute, input, and power. The payload size has a length of 5 bytes.
+The API allows for control of the volume level and the functions mute, input, and power. The payload size (PS) has a length of 5 bytes.
 
 Most commands carry a status value (SV). This value carries current zone (Z) and input (I) information. This byte is calculated as follows: 0x'I'*16+0x'Z'.
 
