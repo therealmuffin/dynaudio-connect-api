@@ -114,7 +114,7 @@ For an example in C check:
 
 
 
-## 7. Glosary
+## 7. Glossary
 
 - PS - Payload Size [in bytes]
 - Z - current Zone
