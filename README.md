@@ -114,8 +114,7 @@ Connect through port 1901. Only one connection is allowed at a time.
 
 Questions and request can be submitted via GitHub.
 
-For an example in C check:
-
+For an example in C check [this file](https://github.com/therealmuffin/synchronator/blob/master/src/modCommandDynaudio.c#L90).
 
 
 ## 7. Glossary
