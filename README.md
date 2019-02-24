@@ -75,7 +75,7 @@ Blue | 0x03
 
 Not all that is specified is necessary. While volume commands have a specific command code for volume up and down, when specifying absolute volume commands (is there another way?), this distinction can be ignored.
 
-The status value supplied with most commands is only partly processed. It is necessary to specify the correct zone. However, the input part of the status value is ignored.
+The status value supplied with most commands is only partially processed. It is necessary to specify the correct zone. However, the input part of the status value is ignored.
 
 
 ## 3. Feedback
@@ -101,7 +101,7 @@ idem to 2.1
 
 The checksum can be calculated as follows:
 
-ROUNDUP(SUM(payload)/255)*255-SUM(payload)-([Payload N]-ROUNDUP(SUM(payload/255)))
+ROUNDUP(SUM(payload)/255)*255-SUM(payload)-([Payload N]-ROUNDUP(SUM(payload)/255))
 
 If the result is negative add 256 or alternatively extract the 8 least significant bits.
 
