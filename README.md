@@ -58,10 +58,7 @@ USB | 0x05
 Bluetooth | 0x06
 Stream | 0x07
 
-&nbsp;
-
 Devices linked with the Dynaudio Connect can be set to one of three zones. Their numeric values are:
-&nbsp;
 
 zone colour | zone value
 ----------- | ----------
