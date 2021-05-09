@@ -78,9 +78,9 @@ The status value supplied with most commands is only partially processed. It is 
 
 ### 2.2. List commands
 
-The API also contains two commands that will list some information about the device currently connected with, most notably the hub configuration (A, B or C). Responses are in ASCII-format. 
+The API also contains two commands that will list some information about the device currently connected with, most notably the hub configuration (A, B or C). Responses are in ASCII-format:
 
-type | Command Code (CC) | description                         | Dynaudio connect example
+type | Command Code (CC) | description                         | Feedback example (Dynaudio Connect)
 ---- | ----------------- | ----------------------------------- | -----------------------------------
 zones | 0x1e | responds with a list of all available zones on the Dynaudio device | 0xFF 0x55 0x10 0x1F 0x52 0x65 0x64 0x5F 0x47 0x72 0x65 0x65 0x6E 0x5F 0x42 0x6C 0x75 0x65 0x00 0x7F
 device properties | 0x01 | responds with a string containing the device name, currently used hub configuration and available sources of/on the Dynaudio device | 0xFF 0x55 0x0A 0x31 0x52 0xF8 0x01 0x06 0x05 0x01 0x00 0x00 0x01 0x6D 0xFF 0x55 0x0A 0x31 0x52 0x50 0x01 0x06 0x05 0x01 0x00 0x00 0x03 0x13
