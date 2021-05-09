@@ -10,10 +10,11 @@ This document describes all currently understood parts of the Dynaudio Connect A
   - [List commands](#22-list-commands)
 - [Feedback](#3-feedback)
   - [Shortcuts](#31-shortcuts)
-- [Checksum](#4-checksum)
-- [Connection](#5-connection)
-- [Questions and Requests](#6-questions-and-requests)
-- [Glossary](#7-glossary)
+- [Speaker status](#4-speaker-status)
+- [Checksum](#5-checksum)
+- [Connection](#6-connection)
+- [Questions and Requests](#7-questions-and-requests)
+- [Glossary](#8-glossary)
 
 ## 1. Overview
 
@@ -105,7 +106,11 @@ Notice again the differential CC for volume up and down. While the feedback on i
 
 idem to 2.1
 
-## 4. Checksum
+## 4. Speaker status
+
+TODO
+
+## 5. Checksum
 
 The checksum can be calculated as follows:
 
@@ -113,19 +118,19 @@ ROUNDUP(SUM(payload)/255)*255-SUM(payload)-([Payload N]-ROUNDUP(SUM(payload)/255
 
 If the result is negative add 256 or alternatively extract the 8 least significant bits.
 
-## 5. Connection
+## 6. Connection
 
 Connect through port 1901. Only one connection is allowed at a time.
 
 
-## 6. Questions and Requests
+## 7. Questions and Requests
 
 Questions and request can be submitted via GitHub.
 
 For an example in C check [this file](https://github.com/therealmuffin/synchronator/blob/fe4bd23adc85ac7cfa7f83baaf67f6aa89cd3d5b/src/modCommandDynaudio.c#L91).
 
 
-## 7. Glossary
+## 8. Glossary
 
 - PS - Payload Size [in bytes]
 - Z - current Zone
