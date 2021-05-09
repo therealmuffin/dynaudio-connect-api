@@ -1,14 +1,15 @@
 # DYNAUDIO CONNECT API
 
-This document describes the Dynaudio - Connect API. This API gives control and feedback of devices linked with the Connect (e.g. Xeo 4/6, Focus-XD).
+This document describes all currently understood parts of the Dynaudio Connect API. This API gives control and feedback of devices linked with the Connect (e.g. Xeo 4/6, Focus-XD). It has been reverse engineered by studying the TCP traffic of the official iPhone application with Wireshark, raw output of which can be found in the "TCP Streams" folder for the overly interested.
 
 #### Contents
 
 - [Overview](#1-overview)
 - [Commands](#2-control)
-  - [shortcuts](#21-shortcuts)
+  - [Shortcuts](#21-shortcuts)
+  - [List commands](#22-list-commands)
 - [Feedback](#3-feedback)
-  - [shortcuts](#31-shortcuts)
+  - [Shortcuts](#31-shortcuts)
 - [Checksum](#4-checksum)
 - [Connection](#5-connection)
 - [Questions and Requests](#6-questions-and-requests)
