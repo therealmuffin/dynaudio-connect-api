@@ -24,7 +24,6 @@ All command and feedback messages have the following structure:
 0xFF 0x55 0x'payload size (PS)' [payload of PS bytes] 0x'checksum'
 </pre>
 
-
 ## 2. Control
 
 The API allows for control of the volume level and the functions mute, input, and power. The payload size (PS) has a length of 5 bytes.
@@ -70,13 +69,11 @@ Red | 0x01
 Green | 0x02
 Blue | 0x03
 
-
 ### 2.1. Shortcuts
 
 Not all that is specified is necessary. While volume commands have a specific command code for volume up and down, when specifying absolute volume commands (is there another way?), this distinction can be ignored.
 
 The status value supplied with most commands is only partially processed. It is necessary to specify the correct zone. However, the input part of the status value is ignored.
-
 
 ### 2.2. List commands
 
@@ -135,13 +132,11 @@ If the result is negative add 256 or alternatively extract the 8 least significa
 
 Connect through port 1901. Only one connection is allowed at a time.
 
-
 ## 7. Questions and Requests
 
 Questions and request can be submitted via GitHub.
 
 For an example in C check [this file](https://github.com/therealmuffin/synchronator/blob/fe4bd23adc85ac7cfa7f83baaf67f6aa89cd3d5b/src/modCommandDynaudio.c#L91).
-
 
 ## 8. Glossary
 
