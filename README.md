@@ -104,11 +104,24 @@ Notice again the differential CC for volume up and down. While the feedback on i
 
 ## 3.1 Shortcuts
 
-idem to 2.1
+see 2.1
 
 ## 4. Speaker status
 
-TODO
+Every 4 or so seconds, a speaker status payload of length 0A is sent to the open connection (if any) for every speaker connected to the connect box, which can be used to derive status information without sending a command to the Dynaudio Connect. An example of speaker status payload would be: 0x31 0x52 0x7F 0x01 0x02 0x05 0x01 0x00 0x00 0x01. It has the following structure:
+
+bit no | description | possible values
+---- | ------------- | ---------------
+1 | Constant | 0x31
+2 | Constant | 0x52
+3 | Speaker identifier, changing on a power loop of the Connect Box and/or Speaker | 0x00 - 0xFF
+4 | Zone | See section 2
+5 | Volume | See section 2 
+6 | Input | See section 2
+7 | Power on/off | 0x00 = off; 0x01 = on
+8 | Mute | 0x00 = not muted; 00x1 = muted
+9 | Power off/on | 0x00 = on; 00x1 = off
+10 | Channel | 0x01 = left; 0x02 = center; 0x03 = right
 
 ## 5. Checksum
 
