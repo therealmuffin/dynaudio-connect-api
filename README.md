@@ -84,7 +84,7 @@ The API also contains two commands that will list some information about the dev
 type | Command Code (CC) | description                         | ASCII feedback payload example (Dynaudio Connect)
 ---- | ----------------- | ----------------------------------- | -----------------------------------------------------
 Zones | 0x1e | responds with a list of all available zones on the Dynaudio device | Red_Green_Blue
-Device properties | 0x01 | responds with a string containing the device name, currently used hub configuration and available sources of/on the Dynaudio device | Dynaudio Connect | A_1MiniJack_1Line_1Optical_1Coax_1USB_1Bluetooth_1*Stream
+Device properties | 0x01 | responds with a string containing the device name, currently used hub configuration and available sources of/on the Dynaudio device | Dynaudio Connect \| A_1MiniJack_1Line_1Optical_1Coax_1USB_1Bluetooth_1*Stream
 
 ## 3. Feedback
 
