@@ -98,7 +98,7 @@ see 2.1
 
 ## 4. Speaker status
 
-Every 4 or so seconds, a speaker status payload of length 0A is sent to the open connection (if any) for every speaker connected to the connect box, which can be used to derive status information without sending a command to the Dynaudio Connect. An example of speaker status payload would be: 0x31 0x52 0x7F 0x01 0x02 0x05 0x01 0x00 0x00 0x01. It has the following structure:
+Every 4 or so seconds, a speaker status payload of length 0A is sent to the open connection (if any) for every speaker connected to the connect box, which can be used to derive status information without sending a command to the Dynaudio Connect. An example of speaker status payload would be: 0x31 0x52 0x7F 0x01 0x02 0x05 0x01 0x00 0x00 0x01. The payload has the following structure:
 
 bit no | description | possible values
 ---- | ------------- | ---------------
