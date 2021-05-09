@@ -74,8 +74,8 @@ The API also contains two commands that will list some information about the dev
 
 type | Command Code (CC) | description                         | ASCII feedback payload example (Dynaudio Connect)
 ---- | ----------------- | ----------------------------------- | -----------------------------------------------------
-Zones | 0x1e | responds with a list of all available zones on the Dynaudio device | Red_Green_Blue
-Device properties | 0x01 | responds with a string containing the device name, currently used hub configuration and available sources of/on the Dynaudio device | Dynaudio Connect \| A_1MiniJack_1Line_1Optical_1Coax_1USB_1Bluetooth_1*Stream
+zones | 0x1e | responds with a list of all available zones on the Dynaudio device | Red_Green_Blue
+device properties | 0x01 | responds with a string containing the device name, currently used hub configuration and available sources of/on the Dynaudio device | Dynaudio Connect \| A_1MiniJack_1Line_1Optical_1Coax_1USB_1Bluetooth_1*Stream
 
 ## 3. Feedback
 
@@ -102,16 +102,16 @@ Besides any possible feedback, every 4 or so seconds a speaker status payload of
 
 bit no | description | possible values
 ---- | ------------- | ---------------
-1 | Constant | 0x31
-2 | Constant | 0x52
-3 | Speaker identifier, changing on a power loop of the Connect Box and/or Speaker | 0x00 - 0xFF
-4 | Zone | See section 2
-5 | Volume | See section 2 
-6 | Input | See section 2
-7 | Power on/off | 0x00 = off; 0x01 = on
-8 | Mute | 0x00 = not muted; 00x1 = muted
-9 | Power off/on | 0x00 = on; 00x1 = off
-10 | Channel | 0x01 = left; 0x02 = center; 0x03 = right
+1 | constant | 0x31
+2 | constant | 0x52
+3 | speaker identifier, changing on a power loop of the Connect Box and/or Speaker | 0x00 - 0xFF
+4 | zone | See section 2
+5 | volume | See section 2 
+6 | input | See section 2
+7 | power on/off | 0x00 = off; 0x01 = on
+8 | mute | 0x00 = not muted; 00x1 = muted
+9 | power off/on | 0x00 = on; 00x1 = off
+10 | channel | 0x01 = left; 0x02 = center; 0x03 = right
 
 ## 5. Checksum
 
