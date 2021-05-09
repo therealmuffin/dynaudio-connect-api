@@ -94,7 +94,7 @@ Notice again the differential CC for volume up and down. While the feedback on i
 
 ## 3.1 Shortcuts
 
-see 2.1
+See 2.1.
 
 ## 4. Speaker status
 
