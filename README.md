@@ -31,7 +31,6 @@ The API allows for control of the volume level and the functions mute, input, an
 Most commands carry a status value (SV). This value carries current zone (Z) and input (I) information. This byte is calculated as follows: 0x'I'*16+0x'Z'.
 
 The following commands can be identified:
-&nbsp;
 
 type | Command Code (CC) | Command Value (CV) | payload structure | payload example
 ---- | ----------------- | ------------------ | ----------------- | ---------------
@@ -43,10 +42,7 @@ power off | 0x02 | 0x00 | 0x2F 0xA0 0x02 0x'CV' 0xF'Z' | 0x2F 0xA0 0x02 0x00 0xF
 
 Notice that volume has two commands codes. The CC for volume up is 0x13 and for volume down 0x14.
 
-&nbsp;
-
 The Dynaudio Connect has 7 inputs. Their 'Command Values' are as follows:
-&nbsp;
 
 input type | Command Value (CV)
 ---------- | ------------------
